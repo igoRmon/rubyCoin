@@ -1,10 +1,14 @@
+<p>
+	<%= link_to 'Português', root_path(locale: 'pt-BR') %>
+</p>
+
+<p>
+	<%= link_to 'English', root_path(locale: 'en') %>
+</p>
+
 <h1>Seja bem vindo</h1>
-<p>My name is Igor Diniz</p>
+<p>O idioma utilizado na aplicação é: <%= I18n.t('current_locale') %></p>
+
+<p><strong>Data:</strong><%= (Date.today)%></p>
 
 <%= render "menu" %>
-<ul>
-    <li>
-    	<%= link_to 'Cadastrar moedas', coins_path %>
-   </li>
-</ul>
-	
